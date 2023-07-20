@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ragistration form</title>
+
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            text-transform: capitalize;
+            /* color: white; */
+        }
+
+
+       .parent{
+
+        width: 500px;
+        height: 500px;
+        box-shadow: 0px 0px 10px green ;
+        margin: 100px auto;
+      padding: 10px;
+      border-radius: 10px;
+      background-color: #791919;
+       }
+      
+       h1{
+        text-align: center;
+color: white;
+       }
+
+       label{
+        color: white;
+       }
+.flex{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+input,select{
+    padding: 10px;
+    /* margin: 10px; */
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 5px;
+}
+
+       body{
+        background: black;
+
+       }
+
+       
+    </style>
+</head>
+<body>
+
+
+
+    <div class="parent">
+
+         <h1>sign up</h1>
+
+         <form action="">
+
+            <div class="flex">
+
+                <label for="name">name</label>
+                <input type="text" name="name" id="name" placeholder="enter name here...">
+
+            </div>
+
+            <div class="flex">
+
+                <label for="batch">batch</label>
+                <select name="batch" id="batch">
+                    <option value="batch">batch</option>
+                    <option value="sigma-1">sigma-1</option>
+                    <option value="sigma-2.0">sigma-2.0</option>
+                </select>
+
+            </div>
+
+            <div class="flex">
+
+                <label for="age">age</label>
+                <input type="text" name="age" id="age" placeholder="enter age here...">
+
+            </div>
+
+            <div class="flex">
+
+                <label for="email">email</label>
+                <input type="email" name="email" id="email" placeholder="enter email here...">
+
+            </div>
+
+            <div class="flex">
+
+                <label for="passowrd">passowrd
+                </label>
+                <input type="password" name="passowrd" id="passowrd" placeholder="enter passowrd here...">
+
+            </div>
+         </form>
+    </div>
+    
+</body>
+</html>
