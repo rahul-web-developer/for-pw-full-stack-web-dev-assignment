@@ -1,0 +1,58 @@
+<!-- Create a web page with 5 a tag similar to a navigation bar. Each link should change to a different color
+when it is hovered over.-->
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* CSS for the navigation bar */
+    .navbar {
+      background-color: #f1f1f1;
+      overflow: hidden;
+    }
+
+    /* CSS for the navigation links */
+    .navbar a {
+      float: left;
+      display: block;
+      color: #333;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    /* CSS for the hover effect */
+     .one:hover {
+      color: #ff0000; /* Change to your desired hover color */
+      background-color: black;
+    }
+.two:hover {
+      color: #1bd2a4; /* Change to your desired hover color */
+      background-color: green;
+    }
+     .three:hover {
+      background-color: red;
+      color: #5812da; /* Change to you
+      r desired hover color */
+      background-color: yellow;
+    }
+     .four:hover {
+      color: #6eee0d; /* Change to your desired hover color */
+      background-color: red;
+    }
+    .five:hover {
+      color: #c8e00d; /* Change to your desired hover color */
+      background-color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <a href="#" class="one">Link 1</a>
+    <a href="#" class="two">Link 2</a>
+    <a href="#" class="three">Link 3</a>
+    <a href="#" class="four">Link 4</a>
+    <a href="#" class="five">Link 5</a>
+  </div>
+</body>
+</html>

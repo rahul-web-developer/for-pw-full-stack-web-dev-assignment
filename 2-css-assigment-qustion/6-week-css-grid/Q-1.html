@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fast food restro</title>
+    <style>
+      * {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+        text-transform: capitalize;
+      }
+
+      /* =======================
+    this is for container
+=======================
+
+*/
+
+      .container {
+        display: grid;
+
+        height: 500px;
+        width: 1000px;
+        border: 3px solid black;
+
+        /* grid-template-columns:repeat(3,1fr); */
+        grid-template-columns: 300px 500px 200px;
+
+        justify-content: space-around;
+/* gap: 10px; */
+        padding: 10px;
+      }
+
+      .items1 {
+        padding: 10px 20px;
+        margin: 0 20px;
+      }
+      .items2 {
+        background-image: url(https://www.bu.edu/files/2019/04/social-iStock-871254830.jpg);
+      }
+
+      .items3 {
+        background-color: yellow;
+      }
+
+
+      /* 
+      button design
+      */
+
+      button{
+        width: 100px;
+        padding: 5px 10px;
+        background-color: black;
+        color: white;
+        font-size: 15px;
+
+
+      }
+
+      a{
+        list-style: none;
+        text-decoration:none;
+        color: white;
+
+      }
+       button a:hover{
+        color:blue;
+        
+    
+        
+      }
+
+      h1::first-letter{
+        font-size: 50px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+color: red;
+
+      }
+
+    
+      
+
+    </style>
+  </head>
+  <body>
+    <!-- ===========================
+        this is box for a container
+        ============================
+
+     -->
+    <div class="container">
+      <div class="items1">
+        <h1 title="heading">healthy food</h1>
+
+        <p>
+          Restaurant Header. Inspirational designs, illustrations, and graphic
+          elements from the world's best designers. Want more inspiration? Lorem
+          ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, ipsa hic?
+          Doloribus amet, qui ad temporibus, eos unde odit sit laborum inventore
+          quaerat asperiores soluta deserunt expedita nulla dolor incidunt.
+        </p>
+
+        <button title="click me to Read more"><a href="#">Read more</a></button>
+      </div>
+      <div class="items2" title="food image"></div>
+      <div class="items3"></div>
+    </div>
+  </body>
+</html>

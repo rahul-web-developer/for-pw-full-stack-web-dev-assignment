@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant fats food</title>
+    <style>
+
+        *{
+            text-transform: capitalize;
+            box-sizing: border-box;
+        }
+
+     
+.navbar{
+
+    display: grid;
+    width: 100%;
+    height: 50px;
+    /* justify-content: space-between;
+    align-items: center;
+    background-color: ; */
+    /* grid-template-columns: repeat(4,1fr); */
+    grid-template-columns: 100px 300px 400px;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px;
+margin: auto;
+
+}
+
+.imglogo img{
+
+    width: 100px;
+
+}
+
+.navigation span{
+    
+    margin: 0 20px;
+    cursor: pointer;
+    font-size: 19px;
+    font-weight: bolder;
+}
+
+
+.contaiiner{
+    
+    margin-top: 50px;
+    display: grid;
+    width: 100%;
+    height: 100%;
+
+    grid-template-columns:400px 600px 300px;
+    grid-template-rows: 500px;
+
+}
+
+h1::first-letter{
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.items2{
+    background-image: url(https://images.unsplash.com/photo-1642371594073-02141d5c779e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80);
+}
+
+.items3{
+    background-color: yellow;
+}
+
+
+button{
+    width: 130px;
+    height: 30px;
+    background-color: black;
+border-radius: 8px;
+
+}
+button a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+a:hover{
+    color: blue;
+    transition: all 2s;
+}
+
+.buttonlogin button{
+    background: rgb(8, 212, 83);
+
+}
+.mainbox{
+    border: 2px solid black;
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- 
+        ===========
+        this is container
+        ===========
+     -->
+
+     <div class="mainbox">
+
+     
+     <div class="navbar">
+       <section class="imglogo">
+<img src="https://img.freepik.com/premium-vector/food-logo-design_139869-254.jpg" alt="logo">
+       </section>
+       <section class="navigation">
+<span>home</span>
+<span>about</span>
+<span>contact</span>
+       </section>
+       <section class="buttonlogin">
+        <button class="login"><a href="#">login</a></button>
+       </section>
+     </div>
+     <div class="contaiiner">
+
+
+        <div class="items1">
+            <h1 title="heading">healthy food</h1>
+
+        <p>
+          Restaurant Header. Inspirational designs, illustrations, and graphic
+          elements from the world's best designers. Want more inspiration? Lorem
+          ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, ipsa hic?
+          Doloribus amet, qui ad temporibus, eos unde odit sit laborum inventore
+          quaerat asperiores soluta deserunt expedita nulla dolor incidunt.
+        </p>
+
+        <button><a href="#">Read more</a></button>
+        </div>
+        <div class="items2">
+<!-- for  img -->
+
+        </div>
+        <div class="items3">
+<!-- for yellow box -->
+        </div>
+     </div>
+  
+    </div>
+</body>
+</html>

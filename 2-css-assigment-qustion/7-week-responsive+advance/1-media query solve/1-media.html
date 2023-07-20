@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media-1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+      
+        }
+
+        .container{
+
+            border: 2px solid black;
+            width: 90vw;
+            height: 100vh;
+            margin: 0 auto;
+
+        }
+
+        .navbar{
+
+            height: 50px;
+            background-color: darkcyan;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .button{
+            width: 90px;
+            height: 30px;
+            background-color: blue;
+            color: white;
+            border-radius: 5px;
+            border-color: blue;
+            /* align-self: center; */
+            align-content: end;     
+            /* margin-right: -500px; */
+            /* justify-self: end;   */
+         }
+
+
+        .nav{
+            display: flex;
+            gap: 30px;
+
+        }
+
+        .nav li {
+            list-style:none;
+            text-decoration: none;
+            text-transform: capitalize;
+            font-size: 20px;
+        }
+
+        .logo{
+            width: 30px;
+            height: 10px;
+            align-self: flex-start;
+            
+
+
+            /* background-image: url(https://img.freepik.com/free-psd/engraved-black-logo-mockup_125540-223.jpg?w=2000); */
+            
+        }
+        .logo img{
+            width: 100%;
+            background-color: black;
+            border-radius: 50%;
+        }
+        .humburger{
+            /* background-color: white; */
+            font-size: 20px;
+            margin-right: 10px ;
+        }
+
+        .humburger{
+            /* visibility: hidden; */
+            display: none;
+        
+        }
+
+
+        @media screen and (max-width:700px) {
+                 .navbar .nav{
+                    display: none;
+                 }
+            .button{
+                display: none;
+            }
+
+           
+
+            .humburger{
+            /* visibility: visible; */
+            display: inline-block;
+            cursor: pointer;
+        }
+        .navbar{
+            height: 70px;
+            display: flex;
+            justify-content: space-between;
+        }
+          .logo img{
+            /* align-self: center; */
+            /* margin-top: 5px ; */
+            /* align-items: center; */
+            /* justify-content: center; */
+            align-self:flex-start;
+
+        }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="navbar">
+
+            <div class="logo">
+                <img src="https://img.freepik.com/free-psd/engraved-black-logo-mockup_125540-223.jpg?w=2000" alt="logo">
+            </div>
+            <ul class="nav">
+               
+                <li>home</li>
+                <li>blog</li>
+                <li>about</li>
+                <li>contacts</li>
+
+            </ul>
+
+            <button class="button">login</button>
+
+            <div class="humburger">
+                <i class=" humburger fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

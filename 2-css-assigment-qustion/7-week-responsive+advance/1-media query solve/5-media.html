@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+            text-transform: capitalize;
+        }
+
+        .parent{
+            width: 80%;
+            height: 90vh;
+            border: 2px solid black;
+margin: 100px auto;
+background-color: red;
+
+        }
+
+        .hero{
+            text-align: center;
+
+        }
+
+        .sum-images{
+            text-decoration:underline;
+            width: 70%;
+            height: 50vh;
+            background-color: blue;
+            margin: 50px auto;
+            display: grid;
+
+            grid-template-columns: repeat(3,1fr);
+
+            grid-gap: 20px;
+        }
+
+        .image{
+            /* width: 75px;
+            height: 75px; */
+            border: 2px solid black;
+            background-image: url(https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg);
+            background-size: cover;
+            padding: 20px;
+            
+            /* width: 100%; */
+        
+        }
+
+
+        @media screen and (max-width:900px) {
+          .parent{
+            width: 100%;
+            height: 100vh;
+            /* background-color: green; */
+          }
+
+          .hero{
+            width: 80%;
+            height: 90vh;
+
+          }
+          .sum-images{
+            /* grid-template-columns: repeat(1,1fr); */
+            display: grid;
+            width: 100vw;
+            height: 100%;
+            /* height: 50; */
+            margin: 0 auto;
+
+
+            overflow: scroll;
+            grid-template-columns: repeat(1,1fr);
+
+            /* grid-template-rows: repeat(6,1fr); */
+
+            /* grid-template-rows: repeat(6,1fr); */
+          }
+
+          .image{
+            width: 50%;
+            height: 50vh;
+            overflow: scroll;
+            margin: 0 auto;
+            background-size: cover;
+            background-position: center;
+          }
+            
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="parent">
+
+        <div class="hero">
+            <div class="heading">
+                <h1>random  images</h1>
+            </div>
+
+            <div class="sum-images">
+                
+                <div class="img1 image">
+
+                </div>
+                <div class="img2 image">
+                    <img src="" alt="">
+                </div>
+                <div class="img3 image"></div>
+                <div class="img4 image"></div>
+                <div class="img5 image"></div>
+                <div class="img6 image"></div>
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

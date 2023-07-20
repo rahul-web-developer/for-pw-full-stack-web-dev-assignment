@@ -1,0 +1,24 @@
+<!-- Create a web page with an image that is hidden until it is hovered over. Use a heading above the image
+that says hover below to reveal a surprise-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    #surprise-image {
+        display: none;
+    }
+
+    #hover-text:hover + #surprise-image {
+        display: block;
+    }
+</style>
+</head>
+<body>
+    <h1>Hover Below to Reveal a Surprise</h1>
+    <p>Hover your mouse below to reveal an image:</p>
+
+    <p id="hover-text">Hover Here</p>
+
+    <img id="surprise-image" src="https://thumbs.dreamstime.com/b/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-gra-130247647.jpg" alt="Surprise Image" width="300" height="200">
+</body>
+</html>

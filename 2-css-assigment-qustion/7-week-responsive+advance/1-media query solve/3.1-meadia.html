@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-media-html</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+
+        *
+          {
+            padding: 0;
+            margin: 0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-transform: capitalize;
+box-sizing: border-box;
+
+          }
+
+           /*  ===========================================
+             this is for parent
+             ===========================================
+            */
+
+
+        .parent
+            {
+              width: 100%;
+              /* height: 100vh; */
+             /* background-color: red; */
+            }
+
+           /* =========================================
+               this is for navigation
+              ===========================================
+           */
+
+
+          .navigation 
+           {
+             display: flex;
+             justify-content: space-between;
+             width: 100%;
+             height: 70px;
+
+              align-items: center;
+
+              position: fixed;
+                 top: 0;
+             background-color: aqua;
+  
+            }
+
+
+
+          /*   ===========================================
+                 this is for navbar
+               =========================================== 
+           */
+
+
+           .navigation .navbar ul 
+           {
+             display: flex;
+             /* widt/h: 50vh; */
+                 justify-content: space-between;
+              gap: 30px;
+            /* display: none; */
+            } 
+            
+
+            /* 
+              for li
+            
+            */
+            li{
+              list-style: none;
+            }
+
+            /* ===========================================
+                        this is for button
+              =========================================== 
+           */
+
+            .button button 
+            {
+             background-color: blue;
+             border-radius: 5px;
+    
+              padding: 8px 19px;
+              color: white;
+             font-size: 17px;
+             margin-right: 5px;
+
+            }
+
+
+
+            .humburger
+            {
+              display: none;
+
+            }
+            /* 
+               ===========================================
+                this is for logo
+               ===========================================
+               
+            */
+
+            /* .logo1 */
+             /* {
+                margin-left: 10px ;
+                
+             
+              }
+               */
+                   /* logo img */
+                   .logo1
+                   {
+                    width: 50px;
+                    background-size: cover;
+                    border-radius: 50%;
+                    margin-left: 5px;
+
+
+                   }
+                   
+
+                   .hero-section{
+                    /* background-color: red; */
+                    width: 100%;
+                    height:100vh;
+                    /* margin-top: 20px; */
+                    /* display: lex; */
+                    /* justify-content: center; */
+                   }
+                       
+                   .main-parent{
+                    display: flex;
+                    justify-content: center;
+                    align-items:center;
+                    margin-top: 100px;
+                    width: 80%;
+                     height: 100vh; 
+                    margin-top: 250px; 
+                    margin: 0 auto;
+
+                   }
+
+                   
+
+                   /* .video-tag{
+                    width: 300px;
+                    height: 300px;
+                   } */
+                   .video-tag  video{
+                    width: 100%;
+        background-size: cover;
+        margin-top:100px;
+        border-radius: 10px;
+        /* height: 300px; */
+        
+      }
+
+      .para{
+        text-align: justify;
+        /* width: 100px; */
+        margin-top: 20px;
+      }
+                    
+                  
+       .footer{
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        color: white;
+        text-align: center;
+        margin-top: 150px;
+       }
+          
+
+       span{
+        display: block;
+        padding: 20px;
+        font-size: 30px;
+       }
+
+       .footer-main{
+        padding: 100px;
+       }
+
+       h2{
+        color: blue;
+        font-size: 35px;
+       }
+                  
+
+               /* =========================
+                  media query code start
+                  =========================
+
+                */
+               @media screen and (max-width:600px) {
+
+                .button button,.navbar 
+                {
+                  display: none;
+
+                }
+
+                .humburger
+                {
+                  display: block;
+                  margin-right: 5px;
+                  font-size: 25px;
+                  color: blue;
+                  
+                  
+                }
+
+                .logo img
+                {
+                  margin-left: 5px;
+                  width: 30px;
+
+                }
+                .main-parent{
+                  flex-direction: column;
+
+                  margin-top: 150px;
+                }
+                  
+
+               .footer{
+
+                background-color: white;
+                color: black;
+                font-size: 14px;
+               }
+
+                .footer span,h2{
+                  font-size: 25px;
+                }
+               }
+
+    </style>
+</head>
+<body>
+
+    <div class="parent">
+
+         <div class="navigation">
+            <div class="logo">
+                <img src="https://img.freepik.com/free-psd/engraved-black-logo-mockup_125540-223.jpg?w=2000" alt="logo" class="logo1">
+            </div>
+
+             <div class="navbar">
+                <ul>
+                    <li>home</li>
+                    <li>about</li>
+                    <li>blog</li>
+                    <li>contact us</li>
+                </ul>
+                <!-- ul end -->
+
+              </div>
+             <!-- navbar end -->
+
+
+             <div class="button">
+                <button>login</button>
+             </div>
+             <div class="humburger">
+              <i class=" humburger fa-solid fa-bars"></i>
+          </div>
+         </div> <!-- navigation end -->
+
+          <div class="hero-section">
+                      <div class="main-parent">
+              <div class="sub-logo-info">
+                      <div class="info">
+                  <h2>say hi to</h2> 
+                  <h1>one card</h1>
+                  
+                  <p>co-branded card issues</p>
+                    </div>
+                  <div class="images">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Canara_Bank_Logo.svg/2560px-Canara_Bank_Logo.svg.png" alt="" width="100px">
+                   
+
+                    <img src="https://1000logos.net/wp-content/uploads/2018/03/SBI-Logo.png" alt="" width="50px">
+                  </div>
+
+                  <div class="para">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, dolorem! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, nostrum?</p>
+                  </div>
+              </div>
+             
+
+
+              <div class="video-tag">
+                <video loop autoplay="autoplay" controls width="">
+                  <source
+                    src="https://www.getonecard.app/images/say_hi_2x_d3_.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+
+              </div>
+              </div>
+
+          </div>
+          <!--hero-section-->
+
+          <div class="footer">
+
+            <div class="footer-main">
+
+               <h2>no hidden fees ever</h2>
+                 <span>no joining fees</span>
+                 <span>no annual fees</span>
+
+                 <span>no rewards redimaption fees</span>
+            </div>
+          </div>
+    
+</body>
+</html>
